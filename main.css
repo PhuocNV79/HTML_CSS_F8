@@ -1,8 +1,10 @@
 :root {
-  --text-color: green;
+  /* global variable */
+  --text-color: green; 
 }
 
 h1 {
-  --my-color: blue;
+  /* local variable */
+  --my-color: blue; 
   color: var(--my-color);
 }
