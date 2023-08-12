@@ -1,6 +1,6 @@
 .header {
   height: 120px;
-  background-image: linear-gradient(0,#fe6433,#EE3E2C);
+  background-image: linear-gradient(0, #fe6433, #ee3e2c);
 }
 
 .header__navbar {
@@ -11,7 +11,6 @@
 .header__navbar-list {
   list-style: none;
   padding-left: 0;
-
 }
 
 .header__navbar-item {
@@ -19,20 +18,27 @@
   position: relative;
   min-height: 26px;
 }
+
 /* Nếu .header__navbar-item--has-qr được hover thì thuộc tính css sẽ dc apply cho .header__qr */
 .header__navbar-item--has-qr:hover .header__qr {
   display: block;
 }
 
-.header__navbar-item, .header__navbar-item-link {
+.header__navbar-item-has-notify:hover .header__notify {
+  display: block;
+}
+
+.header__navbar-item,
+.header__navbar-item-link {
   display: inline-block;
   font-size: 1.4rem;
   color: var(--white-color);
   text-decoration: none;
   font-weight: 300;
 }
-.header__navbar-item:hover, .header__navbar-item-link:hover {
-  color: rgba(255,255,255, 0.7);
+.header__navbar-item:hover,
+.header__navbar-item-link:hover {
+  color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
 }
 
@@ -41,12 +47,12 @@
 }
 
 .header__navbar-item--separate::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   width: 1px;
   height: 14px;
-  background-color: #FB9086;
+  background-color: #fb9086;
   right: -9px;
   top: 50%;
   transform: translateY(-50%);
@@ -62,7 +68,8 @@
   margin: 0 4px;
 }
 
-.header__navbar-item, .header__navbar-item-link {
+.header__navbar-item,
+.header__navbar-item-link {
   display: inline-flex;
   align-items: center;
 }
@@ -88,7 +95,7 @@
 /* Tạo 1 cái cầu để liên kết 2 block header__qr và header__navbar-item--has-qr */
 .header__qr::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   display: block;
   height: 20px;
@@ -117,3 +124,104 @@
   height: 16px;
 }
 
+/* Header Notification */
+.header__notify {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 404px;
+  background-color: var(--white-color);
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  cursor: default;
+  transform-origin: calc(100% - 20px) top;
+  animation: headerNotifyGrowth ease-in 0.2s;
+  display: none;
+}
+
+@keyframes headerNotifyGrowth {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.header__notify-header {
+  height: 40px;
+  background: var(--white-color);
+}
+
+.header__notify-header h3 {
+  color: #999;
+  margin: 0 0 0 12px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 40px;
+  user-select: none;
+}
+
+.header__notify-list {
+  padding-left: 0;
+}
+
+.header__notify-item {
+  display: flex;
+}
+
+.header__notify-item:hover {
+  background: #f7f7f7;
+}
+
+.header__notify-link {
+  display: flex;
+  padding: 12px;
+  width: 100%;
+  text-decoration: none;
+  background-color: rgba(238, 75, 43, 0.08);
+}
+
+.header__notify-item--viewed {
+  background-color: #f8f5f5;
+}
+
+.header__notify-img {
+  width: 48px;
+  object-fit: contain;
+}
+
+.header__notify-info {
+  margin-left: 12px;
+}
+.header__notify-name {
+  display: block;
+  font-size: 1.4rem;
+  color: #5a5a5a;
+  font-weight: 300;
+  line-height: 1.8rem;
+}
+.header__notify-description {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #7f7f7f;
+}
+.header__notify-footer {
+  display: flex;
+}
+
+.header__notify-footer:hover {
+  background-color: #c1c1c1;
+}
+
+.header__notify-footer-btn {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 8px 8px;
+  margin: auto;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
