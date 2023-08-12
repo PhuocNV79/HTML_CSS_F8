@@ -19,6 +19,10 @@
   position: relative;
   min-height: 26px;
 }
+/* Nếu .header__navbar-item--has-qr được hover thì thuộc tính css sẽ dc apply cho .header__qr */
+.header__navbar-item--has-qr:hover .header__qr {
+  display: block;
+}
 
 .header__navbar-item, .header__navbar-item-link {
   display: inline-block;
@@ -77,12 +81,39 @@
   top: 100%;
   padding: 8px;
   border-radius: 2px;
+  display: none;
+  animation: fadeIn ease-in 0.35s;
+}
+
+/* Tạo 1 cái cầu để liên kết 2 block header__qr và header__navbar-item--has-qr */
+.header__qr::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  display: block;
+  height: 20px;
+  left: 0;
+  top: -16px;
+}
+
+.header__qr-img {
+  width: 100%;
 }
 
 .header__qr-apps {
   display: flex;
+  justify-content: space-between;
+}
+
+.header__qr-link:first-child {
+  margin-left: 11px;
+}
+
+.header__qr-link:last-child {
+  margin-right: 11px;
 }
 
 .header__qr-download-img {
   height: 16px;
 }
+
