@@ -26,6 +26,10 @@
   text-decoration: none;
   font-weight: 300;
 }
+.header__navbar-item:hover, .header__navbar-item-link:hover {
+  color: rgba(255,255,255, 0.7);
+  cursor: pointer;
+}
 
 .header__navbar-item-link--bold {
   font-weight: 400;
@@ -41,4 +45,13 @@
   right: -9px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.hader__navbar-item-link {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.header__navbar-icon {
+  font-size: 1.8rem;
 }
