@@ -17,6 +17,7 @@
 .header__navbar-item {
   margin: 0 8px;
   position: relative;
+  min-height: 26px;
 }
 
 .header__navbar-item, .header__navbar-item-link {
@@ -47,11 +48,41 @@
   transform: translateY(-50%);
 }
 
-.hader__navbar-item-link {
+.header__navbar-item-link {
   color: var(--white-color);
   text-decoration: none;
 }
 
 .header__navbar-icon {
   font-size: 1.8rem;
+  margin: 0 4px;
+}
+
+.header__navbar-item, .header__navbar-item-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header__navbar-item-title--no-pointer {
+  cursor: text;
+  color: var(--white-color);
+}
+
+/* Header QR code */
+.header__qr {
+  background-color: var(--white-color);
+  width: 186px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding: 8px;
+  border-radius: 2px;
+}
+
+.header__qr-apps {
+  display: flex;
+}
+
+.header__qr-download-img {
+  height: 16px;
 }
