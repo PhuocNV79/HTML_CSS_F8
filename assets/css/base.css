@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #EE4D2D;
+  --primary-color: #ee4d2d;
   --white-color: #fff;
   --black-color: #000;
-  --text-color: #333
+  --text-color: #333;
 }
 
 * {
@@ -25,7 +25,6 @@ html {
   max-width: 100%;
   /* Căn giữa block này khi nằm trong block cha */
   margin: 0 auto;
-
 }
 
 .grid__full-width {
@@ -42,7 +41,33 @@ html {
   from {
     opacity: 0;
   }
-  to  {
+  to {
     opacity: 1;
   }
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+
+.modal__overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal__body {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: var(--white-color);
+  margin: auto;
+  border-radius: 3px;
 }
