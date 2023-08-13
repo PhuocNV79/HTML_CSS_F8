@@ -127,7 +127,7 @@
 /* Header Notification */
 .header__notify {
   position: absolute;
-  top: 100%;
+  top: 130%;
   right: 0;
   width: 404px;
   background-color: var(--white-color);
@@ -137,6 +137,27 @@
   transform-origin: calc(100% - 20px) top;
   animation: headerNotifyGrowth ease-in 0.2s;
   display: none;
+}
+
+.header__notify::before {
+  content: '';
+  border-width: 20px 26px;
+  border-style: solid;
+  border-color: transparent transparent var(--white-color) transparent;
+  right: 2px;
+  top: -32px;
+  position: absolute;
+}
+
+.header__notify::after {
+  content: '';
+  width: 21%;
+  display: block;
+  height: 20px;
+  /* background-color: #000; */
+  top: -20px;
+  right: 0px;
+  position: absolute;
 }
 
 @keyframes headerNotifyGrowth {
