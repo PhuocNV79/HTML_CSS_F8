@@ -1,0 +1,8 @@
+/* Đặt biến trong css */
+:root{ /* Đây gọi là lớp giả */
+  --text-colorabc: red;
+}
+
+h1 {
+  color: var(--text-colorabc);
+}
