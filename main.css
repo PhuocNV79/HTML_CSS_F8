@@ -1,8 +1,21 @@
+html, body {
+  margin: 0;
+}
+
 /* Đặt biến trong css */
 :root{ /* Đây gọi là lớp giả */
   --text-colorabc: red;
+  --grey-color: rgb(189, 187, 187);
 }
-
+html {
+  font-size: 20px;
+}
 h1 {
   color: var(--text-colorabc);
+  font-size: 1rem; /* rem tham chiếu tới thẻ html */
+}
+.vw-vh {
+  height: 50vh;
+  width: 50vw;
+  background-color: var(--grey-color);
 }
