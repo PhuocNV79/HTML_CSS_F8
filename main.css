@@ -31,8 +31,9 @@ h1 {
 .header {
   width: 100%;
   height: 100vh;
-  background-image:url(https://bongban.org/attachments/1642650756131-png.137688/);
+  /* background-image:url(https://bongban.org/attachments/1642650756131-png.137688/);
   background-repeat: no-repeat;
   background-size: 200px;
-  background-position: bottom right;
+  background-position: center; */
+  background: url(https://bongban.org/attachments/1642650756131-png.137688/) no-repeat center / contain ;
 }
