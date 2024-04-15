@@ -11,3 +11,6 @@ CSS Units:
 CSS Box-sizing:
   Khi sử dụng box-sizing: border-box : thì trình duyệt sẽ hiểu à kích thước element được khai báo
   sẽ bao gồm padding, border
+
+CSS background-clip: content-box;
+  Khi muốn tạo background chỉ cho phần nội dung thì dùng thuộc tính ni
