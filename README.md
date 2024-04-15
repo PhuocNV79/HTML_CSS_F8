@@ -21,3 +21,10 @@ CSS pseudo-class Lớp giả
   :active
   :first-child
   :last-child
+
+CSS pseudo-element Phân tử giả
+  ::before
+  ::after
+  ::first-letter
+  ::first-line
+  ::selection
