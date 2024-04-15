@@ -31,6 +31,9 @@ h1 {
 .header {
   width: 100%;
   height: 100vh;
-  background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdnhUohblvcsnOTHk_wqZ9Kq2dZWPltmj251NG-Ee3YQ&s);
-  background-repeat: repeat;
+  background-image:url(https://bongban.org/attachments/1642650756131-png.137688/);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-size: cover; */
+
 }
