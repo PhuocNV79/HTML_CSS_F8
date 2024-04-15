@@ -19,3 +19,10 @@ h1 {
   width: 50vw;
   background-color: var(--grey-color);
 }
+
+.box {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    background-color: darkorchid;
+}
