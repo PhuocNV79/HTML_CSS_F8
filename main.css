@@ -73,3 +73,7 @@ li:first-child{
 li:last-child{
   color: blue;
 }
+
+.firstLetter::first-letter {
+  color: red;
+}
