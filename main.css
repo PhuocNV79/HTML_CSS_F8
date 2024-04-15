@@ -37,3 +37,17 @@ h1 {
   background-position: center; */
   background: url(https://bongban.org/attachments/1642650756131-png.137688/) no-repeat center / contain ;
 }
+
+.box{
+  width: 100%;
+  height: 120px;
+  background: rgb(red, green, blue);
+}
+
+.box::after{
+  content: attr(data-title);
+}
+
+a::after{
+  content: " (" attr(href) " )";
+}
