@@ -14,3 +14,10 @@ CSS Box-sizing:
 
 CSS background-clip: content-box;
   Khi muốn tạo background chỉ cho phần nội dung thì dùng thuộc tính ni
+
+CSS pseudo-class Lớp giả
+  :root
+  :hover
+  :active
+  :first-child
+  :last-child

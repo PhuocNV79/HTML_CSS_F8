@@ -48,6 +48,19 @@ h1 {
   content: attr(data-title);
 }
 
+/* click vào element */
+.box:active{ 
+  color: red;
+}
+
 a::after{
   content: " (" attr(href) " )";
+}
+
+li:first-child{
+  color: red;
+}
+
+li:last-child{
+  color: blue;
 }
