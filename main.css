@@ -10,10 +10,6 @@ html, body {
 html {
   font-size: 20px;
 }
-h1 {
-  color: var(--text-colorabc);
-  font-size: 1rem; /* rem tham chiếu tới thẻ html */
-}
 .vw-vh {
   height: 50vh;
   width: 50vw;
@@ -85,4 +81,17 @@ li:last-child{
 
 .firstLetter::selection{
   background-color: yellow;
+}
+
+h1 {
+  /* position: relative => phụ thuộc vào chính nó, muốn di chuyển đi đâu cũng dc */
+  /* dùng top right ... để di chuyển */
+  position: relative;
+  width: 200px;
+  top: 150px;
+  left: 50px;
+  height: 200px;
+  top: 0px;
+  background-color: plum;
+  margin: 0;
 }
