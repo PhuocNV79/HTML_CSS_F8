@@ -30,28 +30,38 @@ html {
 .box{
   background-color: paleturquoise;
   width: 100%;
-  /* height: 120px; */
+  height: 120px;
+  position: relative;
 }
 
-.box::before{
-  content: "";
-  /* Lớp giả cần set display block */
-  display: block;
+.box-child {
   width: 50px;
   height: 50px;
   background-color: #fff;
-
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-.box::after{
-  content: "";
-  /* Lớp giả cần set display block */
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-color: #a98b8b;
+/* .box::before{ */
+  /* content: ""; */
+  Lớp giả cần set display block
+  /* display: block; */
+  /* width: 50px; */
+  /* height: 50px; */
+  /* background-color: #fff; */
+/*  */
+/* } */
 
-}
+/* .box::after{ */
+  /* content: ""; */
+  Lớp giả cần set display block
+  /* display: block; */
+  /* width: 50px; */
+  /* height: 50px; */
+  /* background-color: #a98b8b; */
+/*  */
+/* } */
 
 /* click vào element */
 .box:active{ 

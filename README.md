@@ -31,5 +31,5 @@ CSS pseudo-element Phân tử giả
 
 CSS position
   relative
-  absolute
+  absolute : phụ thuộc vào thằng cha gần nhất có thuộc tính position, chứ ko phải position:relative
   fixed
