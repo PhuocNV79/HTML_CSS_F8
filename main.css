@@ -1,5 +1,6 @@
 html, body {
   margin: 0;
+  padding: 0;
 }
 
 /* Đặt biến trong css */
@@ -19,12 +20,15 @@ html {
 
 .header {
   width: 100%;
-  height: 100vh;
+  height: 50px;
+  background-color: violet;
+  position: fixed;
+  top: 0;
   /* background-image:url(https://bongban.org/attachments/1642650756131-png.137688/);
   background-repeat: no-repeat;
   background-size: 200px;
   background-position: center; */
-  background: url(https://bongban.org/attachments/1642650756131-png.137688/) no-repeat center / contain ;
+  /* background: url(https://bongban.org/attachments/1642650756131-png.137688/) no-repeat center / contain ; */
 }
 
 .box{
@@ -104,4 +108,11 @@ h1 {
   top: 0px;
   background-color: plum;
   margin: 0;
+}
+
+
+
+ul {
+  height: 2000px;
+  margin-top: 60px;
 }

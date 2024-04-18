@@ -32,4 +32,4 @@ CSS pseudo-element Phân tử giả
 CSS position
   relative
   absolute : phụ thuộc vào thằng cha gần nhất có thuộc tính position, chứ ko phải position:relative
-  fixed
+  fixed : Sử dụng khi cần vị trí của element phụ thuộc vào vị trí của cửa sổ trình duyệt
