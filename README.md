@@ -50,3 +50,16 @@ CSS flex box
   flex-flow: short hand cua flex-wrap va flex-direction
   =======
   Link tham khao: https://codepen.io/enxaneta/full/adLPwv/
+
+BEM
+  BEM là tiêu chuẩn đặt tên class khi viết CSS
+  Ý nghĩa: là viết tắt của Block Element modifier
+  Block: Khối
+  Element: Thành phần trong khối
+  Modifier: Bổ sung ý nghĩa cho block hoặc element
+
+  Cú pháp:
+  .block
+  .block__element
+  .block--modifier
+  .block__element--modifier
