@@ -33,3 +33,18 @@ CSS position
   relative
   absolute : phụ thuộc vào thằng cha gần nhất có thuộc tính position, chứ ko phải position:relative
   fixed : Sử dụng khi cần vị trí của element phụ thuộc vào vị trí của cửa sổ trình duyệt
+
+CSS flex box
+  display: flex|inline-flex
+  flex-direction: row|colum
+  flex-wrap: nowrap|wrap|wrap-reverse
+  flex-basis: <length>
+  justify-content: flex-start|flex-end|center|space-between|  space-around
+  justify-self: flex-start|flex-end|center
+  align-content: flex-start|flex-end|center
+  align-self: flex-start|flex-end|center
+  flex-grow: <number>
+  flex-shrink: <number>
+  flex: <number>
+  order: number
+  flex-flow: short hand cua flex-wrap va flex-direction
