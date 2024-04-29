@@ -6,16 +6,17 @@
 body{
   height: 100vh;
   margin: 10px;
-  display: flex;
+  /* display: flex; */
   background-color: rgb(230, 227, 227);
 }
 body > div {
-  margin: auto;
+  /* margin: auto; */
 }
 #toast {
   position: fixed;
   top: 32px;
   right: 32px;
+  z-index: 9999;
 }
 .toast{
   display: flex;
@@ -27,7 +28,8 @@ body > div {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
   min-width: 350px;
   min-width: 400px;
-  animation: slideInLeft ease 1.2s, fadeOut linear 1.7s 3s forwards;
+  /* animation: slideInLeft ease 1.2s, fadeOut linear 1.7s 3s forwards; */
+  transition: all linear 0.3s;
 }
 
 @keyframes slideInLeft {
@@ -113,3 +115,28 @@ body > div {
   color: #f6623d;
 }
 
+.btn {
+  display: inline-block;
+  /* text-decoration: none; */
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 12px 48px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  min-width: 120px;
+}
+
+.btn:hover{
+  opacity: 0.8;
+}
+
+.btn--success{
+  background-color: #71be33;
+}
+
+.btn--danger{
+  background-color: #f6623d;
+}
