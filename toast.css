@@ -12,6 +12,11 @@ body{
 body > div {
   margin: auto;
 }
+#toast {
+  position: fixed;
+  top: 32px;
+  right: 32px;
+}
 .toast{
   display: flex;
   align-items: center;
@@ -20,21 +25,42 @@ body > div {
   border-left: 4px solid;
   padding: 20px 0;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
-  min-width: 300px;
+  min-width: 350px;
+  min-width: 400px;
+  animation: slideInLeft ease 1.2s, fadeOut linear 1.7s 3s forwards;
 }
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+  transform: translateX(calc(100% + 32px));
+  }
+
+  to {
+    opacity: 1;
+  transform: translateX(0);
+
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+
 .toast + .toast{
   margin-top: 24px;
 }
 .toast__icon {
   font-size: 24px;
-  flex: 1;
 }
 
 .toast__icon, .toast__close{
   padding: 0 16px;
 }
 .toast__body{
-  flex: 8;
+  flex-grow: 1;
 }
 .toast__title{
   font-size: 16px;
@@ -43,13 +69,13 @@ body > div {
 .toast__message{
   font-size: 14px;
   color: #888;
-  margin-top: 4px;
+  margin-top: 6px;
+  line-height: 1.5;
 }
 .toast__close{
   font-size: 20px;
   color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  flex: 1;
   
 }
 .toast__close:hover{
@@ -86,3 +112,4 @@ body > div {
 .toast--error .toast__icon {
   color: #f6623d;
 }
+
